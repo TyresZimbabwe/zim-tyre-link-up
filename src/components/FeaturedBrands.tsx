@@ -3,12 +3,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const brands = [
-  { id: 1, name: "Bridgestone", logo: "https://i.imgur.com/YJUNZRW.png", path: "/brands/bridgestone" },
+  { id: 1, name: "Bridgestone", logo: "https://images.unsplash.com/photo-1604431781376-b72d64a43fc2", path: "/brands/bridgestone" },
   { id: 2, name: "Michelin", logo: "https://images.unsplash.com/photo-1570477885232-ed50f68ef274", path: "/brands/michelin" },
-  { id: 3, name: "Goodyear", logo: "https://i.imgur.com/HfSOeET.png", path: "/brands/goodyear" },
-  { id: 4, name: "Dunlop", logo: "https://i.imgur.com/EC8Lm5n.png", path: "/brands/dunlop" },
-  { id: 5, name: "Pirelli", logo: "https://i.imgur.com/GGKPE9s.png", path: "/brands/pirelli" },
-  { id: 6, name: "Continental", logo: "https://i.imgur.com/QmlR6ns.png", path: "/brands/continental" }
+  { id: 3, name: "Goodyear", logo: "https://images.unsplash.com/photo-1600960776535-fe6e50bd5670", path: "/brands/goodyear" },
+  { id: 4, name: "Dunlop", logo: "https://images.unsplash.com/photo-1557007462-811d1fc6eb34", path: "/brands/dunlop" },
+  { id: 5, name: "Pirelli", logo: "https://images.unsplash.com/photo-1745966325553-3e9d228901ca", path: "/brands/pirelli" },
+  { id: 6, name: "Continental", logo: "https://images.unsplash.com/photo-1716769111021-9b4594f321ea", path: "/brands/continental" }
 ];
 
 const FeaturedBrands = () => {
