@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const brands = [
   { id: 1, name: "Bridgestone", logo: "https://i.imgur.com/YJUNZRW.png", path: "/brands/bridgestone" },
-  { id: 2, name: "Michelin", logo: "https://i.imgur.com/b6KSsmx.png", path: "/brands/michelin" },
+  { id: 2, name: "Michelin", logo: "https://images.unsplash.com/photo-1570477885232-ed50f68ef274", path: "/brands/michelin" },
   { id: 3, name: "Goodyear", logo: "https://i.imgur.com/HfSOeET.png", path: "/brands/goodyear" },
   { id: 4, name: "Dunlop", logo: "https://i.imgur.com/EC8Lm5n.png", path: "/brands/dunlop" },
   { id: 5, name: "Pirelli", logo: "https://i.imgur.com/GGKPE9s.png", path: "/brands/pirelli" },
