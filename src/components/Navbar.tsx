@@ -38,7 +38,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex-shrink-0 flex items-center">
             <span className="font-bold text-2xl text-tyreBlue">
-              ZimTyre<span className="text-tyreOrange">LinkUp</span>
+              Tyres <span className="text-tyreOrange">Zimbabwe</span>
             </span>
           </Link>
 
