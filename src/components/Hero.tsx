@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="relative bg-tyreBlue text-white">
       <div className="absolute inset-0 bg-gradient-to-r from-tyreBlue/90 to-tyreBlue/70">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1653201587864-c6280a0bb4eb?q=80&w=1920&auto=format')] bg-cover bg-center mix-blend-overlay opacity-40"></div>
+        <div className="absolute inset-0 bg-[url('https://plus.unsplash.com/premium_photo-1675810094937-f5a3755e10fd?q=80&w=1920&auto=format')] bg-cover bg-center mix-blend-overlay opacity-40"></div>
       </div>
       
       <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
