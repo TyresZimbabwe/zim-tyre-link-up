@@ -8,6 +8,7 @@ import FindTyreForm from "@/components/FindTyreForm";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import Testimonials from "@/components/Testimonials";
 import CTASection from "@/components/CTASection";
+import LatestBlog from "@/components/LatestBlog";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -21,6 +22,7 @@ const Index = () => {
         <FeaturedProducts />
         <FeaturedBrands />
         <Testimonials />
+        <LatestBlog />
         <CTASection />
       </main>
       <Footer />
