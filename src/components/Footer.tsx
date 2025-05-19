@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">
-              ZimTyre<span className="text-tyreOrange">LinkUp</span>
+              Tyres <span className="text-tyreOrange">Zimbabwe</span>
             </h3>
             <p className="text-gray-300 mb-4">
               Connecting tyre buyers and sellers across Zimbabwe with quality products and competitive prices.
@@ -88,17 +88,16 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <address className="not-italic text-gray-300 space-y-2">
-              <p>123 Samora Machel Ave</p>
               <p>Harare, Zimbabwe</p>
-              <p className="mt-4">Email: info@zimtyrelinkup.co.zw</p>
-              <p>Phone: +263 77 123 4567</p>
+              <p className="mt-4">Email: info@tyres.co.zw</p>
+              <p>Phone: +263 77 232 0377</p>
             </address>
           </div>
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-6">
           <p className="text-center text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} ZimTyre LinkUp. All rights reserved.
+            &copy; {new Date().getFullYear()} Tyres Zimbabwe. All rights reserved.
           </p>
         </div>
       </div>
