@@ -9,7 +9,274 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      [_ in never]: never
+      brand_models: {
+        Row: {
+          brand_id: string
+          created_at: string
+          description: string | null
+          id: string
+          model_name: string
+        }
+        Insert: {
+          brand_id: string
+          created_at?: string
+          description?: string | null
+          id?: string
+          model_name: string
+        }
+        Update: {
+          brand_id?: string
+          created_at?: string
+          description?: string | null
+          id?: string
+          model_name?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "brand_models_brand_id_fkey"
+            columns: ["brand_id"]
+            isOneToOne: false
+            referencedRelation: "brands"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      brands: {
+        Row: {
+          country_of_origin: string | null
+          created_at: string
+          description: string | null
+          id: string
+          logo_url: string | null
+          name: string
+          slug: string
+          updated_at: string
+        }
+        Insert: {
+          country_of_origin?: string | null
+          created_at?: string
+          description?: string | null
+          id?: string
+          logo_url?: string | null
+          name: string
+          slug: string
+          updated_at?: string
+        }
+        Update: {
+          country_of_origin?: string | null
+          created_at?: string
+          description?: string | null
+          id?: string
+          logo_url?: string | null
+          name?: string
+          slug?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      business_submissions: {
+        Row: {
+          additional_notes: string | null
+          address: string
+          admin_notes: string | null
+          brands: string[] | null
+          business_name: string
+          city: string
+          contact_email: string
+          contact_phone: string
+          created_at: string
+          description: string | null
+          facebook_url: string | null
+          id: string
+          instagram_url: string | null
+          logo_url: string | null
+          operating_hours: string | null
+          services: string[] | null
+          status: string
+          updated_at: string
+          user_id: string | null
+          website_url: string | null
+          whatsapp_number: string | null
+        }
+        Insert: {
+          additional_notes?: string | null
+          address: string
+          admin_notes?: string | null
+          brands?: string[] | null
+          business_name: string
+          city: string
+          contact_email: string
+          contact_phone: string
+          created_at?: string
+          description?: string | null
+          facebook_url?: string | null
+          id?: string
+          instagram_url?: string | null
+          logo_url?: string | null
+          operating_hours?: string | null
+          services?: string[] | null
+          status?: string
+          updated_at?: string
+          user_id?: string | null
+          website_url?: string | null
+          whatsapp_number?: string | null
+        }
+        Update: {
+          additional_notes?: string | null
+          address?: string
+          admin_notes?: string | null
+          brands?: string[] | null
+          business_name?: string
+          city?: string
+          contact_email?: string
+          contact_phone?: string
+          created_at?: string
+          description?: string | null
+          facebook_url?: string | null
+          id?: string
+          instagram_url?: string | null
+          logo_url?: string | null
+          operating_hours?: string | null
+          services?: string[] | null
+          status?: string
+          updated_at?: string
+          user_id?: string | null
+          website_url?: string | null
+          whatsapp_number?: string | null
+        }
+        Relationships: []
+      }
+      supplier_brands: {
+        Row: {
+          brand_id: string
+          created_at: string
+          id: string
+          supplier_id: string
+        }
+        Insert: {
+          brand_id: string
+          created_at?: string
+          id?: string
+          supplier_id: string
+        }
+        Update: {
+          brand_id?: string
+          created_at?: string
+          id?: string
+          supplier_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "supplier_brands_brand_id_fkey"
+            columns: ["brand_id"]
+            isOneToOne: false
+            referencedRelation: "brands"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "supplier_brands_supplier_id_fkey"
+            columns: ["supplier_id"]
+            isOneToOne: false
+            referencedRelation: "suppliers"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      supplier_services: {
+        Row: {
+          created_at: string
+          id: string
+          service_name: string
+          supplier_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          service_name: string
+          supplier_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          service_name?: string
+          supplier_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "supplier_services_supplier_id_fkey"
+            columns: ["supplier_id"]
+            isOneToOne: false
+            referencedRelation: "suppliers"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      suppliers: {
+        Row: {
+          address: string | null
+          business_name: string
+          city: string
+          contact_email: string | null
+          contact_phone: string | null
+          created_at: string
+          description: string | null
+          facebook_url: string | null
+          id: string
+          instagram_url: string | null
+          is_approved: boolean
+          is_featured: boolean
+          logo_url: string | null
+          operating_hours: string | null
+          slug: string
+          updated_at: string
+          user_id: string | null
+          website_url: string | null
+          whatsapp_number: string | null
+        }
+        Insert: {
+          address?: string | null
+          business_name: string
+          city: string
+          contact_email?: string | null
+          contact_phone?: string | null
+          created_at?: string
+          description?: string | null
+          facebook_url?: string | null
+          id?: string
+          instagram_url?: string | null
+          is_approved?: boolean
+          is_featured?: boolean
+          logo_url?: string | null
+          operating_hours?: string | null
+          slug: string
+          updated_at?: string
+          user_id?: string | null
+          website_url?: string | null
+          whatsapp_number?: string | null
+        }
+        Update: {
+          address?: string | null
+          business_name?: string
+          city?: string
+          contact_email?: string | null
+          contact_phone?: string | null
+          created_at?: string
+          description?: string | null
+          facebook_url?: string | null
+          id?: string
+          instagram_url?: string | null
+          is_approved?: boolean
+          is_featured?: boolean
+          logo_url?: string | null
+          operating_hours?: string | null
+          slug?: string
+          updated_at?: string
+          user_id?: string | null
+          website_url?: string | null
+          whatsapp_number?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
