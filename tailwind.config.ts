@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom colors
+				tyreBlue: '#0F4C81',
+				tyreOrange: '#FF7F50',
+				tyreLightGray: '#F5F5F5',
+				tyreDarkGray: '#333333',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
