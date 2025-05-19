@@ -13,6 +13,7 @@ export interface BlogPostProps {
   date: Date;
   author: string;
   readTime: number;
+  content?: React.ReactNode; // Added content property as optional
 }
 
 const BlogCard: React.FC<{ post: BlogPostProps; className?: string }> = ({ post, className = "" }) => {

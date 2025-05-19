@@ -4,6 +4,7 @@ import PageLayout from "@/components/PageLayout";
 import { Link } from "react-router-dom";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Truck, Clock, Calendar } from "lucide-react";
+import { Button } from "@/components/ui/button"; // Added Button import
 
 const ShippingInfo = () => {
   return (

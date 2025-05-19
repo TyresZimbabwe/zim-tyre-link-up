@@ -1,8 +1,8 @@
-
 import React from "react";
 import PageLayout from "@/components/PageLayout";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button"; // Added Button import
 
 // FAQs data
 const faqs = [
